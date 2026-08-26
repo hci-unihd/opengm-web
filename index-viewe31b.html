@@ -1,0 +1,119 @@
+<html>
+
+<!-- Mirrored from 129.206.117.250/opengm/index-view.php?bench=cvpr2013&model=seg-3d by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 13:29:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>View</title>
+<style type="text/css">
+td {text-align:right; padding-left:20px; white-space: nowrap;}
+tr.line td{border-top-width: 1px; border-top-style: solid; border-top-color: #999999; text-align:right; padding-left:20px; white-space: nowrap;}
+tr.noline td{text-align:right; padding-left:20px; white-space: nowrap;}
+</style>
+<link href="../../ando.hci.uni-heidelberg.de/opengm/flot/src/hci.flot.charts.stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Enable support for Internet Explorer < 9 -->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../lib/flot-v0.8/excanvas.min.js"></script><![endif]-->
+     
+<!-- load jquery and flot -->
+<script> var pathname = window.location.pathname;</script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.flot.selection.js"></script>
+<!-- load flot plugin to support axis labels -->
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot_axis_labels_plugin/jquery.flot.axislabels.js"></script> 
+<!-- load hci flot charts -->
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/src/hci.flot.charts.js"></script>
+
+<script type="text/javascript">
+var instances   = ["mc3d1-model","mc3d2-model"];
+var uppercutoff = [158795.9894,1253637.1228];
+var lowercutoff = [47457.9706,768642.5835];
+var model       = "seg-3d";
+var benchpath   = "benchmarks/CVPR2013/index.html";
+var bench       = "cvpr2013";
+</script>
+
+
+<script type="text/javascript">
+  var instance=0;
+  var numInstances=2;
+
+  function init()
+  {
+     updateSmallTable();
+  }
+  window.onload=init;
+
+  function update(C)
+  {
+     document.getElementById('content').innerHTML = C;
+  }
+
+  function updateSmallTable()
+  {
+          document.getElementById('content').innerHTML = unescape('%3Ctable%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Cb%3E%20%20%20%20%20%20%20%20%20%20%20algorithm%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3Emean%20run%20time%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20mean%20value%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20mean%20bound%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20%20best%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3Ever.%20opt%3C%2Fb%3E%3C%2Ftd%3E%20%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20MCA%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%202017.83%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20415007.12%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20413515.53%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20MCA%20%286h%29%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%205056.85%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20413536.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20413536.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20100.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20100.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20MCA-fdo%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%201862.99%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20414470.20%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20413503.06%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3C%2Ftable%3E');
+  }
+
+  function updateLargeTable()
+  {
+          document.getElementById('content').innerHTML = unescape('%3Ctable%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cb%3EMCA%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EMCA%20%286h%29%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EMCA-fdo%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Emc3d1-model%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2048140.05%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2048140.05%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2048140.05%3C%2Fb%3E%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2048140.05%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2048140.05%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2048140.05%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%2011.86%3C%2Ftd%3E%3Ctd%3E%2010.85%3C%2Ftd%3E%3Ctd%3E%2010.91%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Emc3d2-model%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20781874.19%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20778931.96%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20780800.36%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20778891.02%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20778931.96%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20778866.07%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%204023.81%3C%2Ftd%3E%3Ctd%3E%2010102.85%3C%2Ftd%3E%3Ctd%3E%203715.07%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20energy%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%20414470.20%3C%2Ftd%3E%3Ctd%3E%20413536.00%3C%2Ftd%3E%3Ctd%3E%20414470.20%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20bound%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20413515.53%3C%2Ftd%3E%3Ctd%3E%20413536.00%3C%2Ftd%3E%3Ctd%3E%20413503.06%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20runtime%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B2017.83%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B5056.85%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B1862.99%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Ebest%20value%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Ebest%20bound%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Everified%20opt%3Cb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3C%2Ftr%3E%0A');
+  }
+    
+  function updateI(C)
+  {
+     if(C>=0)  instance = 0+parseInt(C);
+document.getElementById('content').innerHTML = '<div id="instancename" align="center" style=\"font-size:30px; width:900px;\">'+instances[instance]+'</div><div class="demo-container"><!-- Create placeholders --><div id="chart" class="demo-placeholder" style="float:left; width:700px;"></div><div id="zoom" class="demo-placeholder" style="float:right;width:250px; height:150px;"></div><div id="choices" style="float:right; width:250px;">Datasets</div> <div id="options" style="float:right; width:250px;">Options</div></div>';
+
+   var loadedData;
+   var options;
+ 
+   loadedData = "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-full.json";
+   options = { 
+        relatedDatasets : "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-related.json", 
+        reducedData : "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-reduced.json",
+        logScaleX : true,
+        labelX : "Time",
+        labelY : "Energy",
+        yMax : uppercutoff[instance],
+        yMin : lowercutoff[instance]
+   };
+            
+   // plot data
+   $.hciPlotChart(loadedData, "#choices", "#zoom", "#chart", "#options", options);
+    
+     //document.getElementById('content').innerHTML = '<br><center>Not supported yet! (Instance '+instance+') </center><br>';
+     //document.getElementById('content').innerHTML = '<img src="plots/matching1.jpg"  width="600">';
+  } 
+  function updateIup()
+  {
+     instance = instance+1;
+     if(instance>numInstances-1) instance=0;
+     updateI(instances);
+   } 
+  function updateIdown()
+  {
+     instance = (instance-1);
+     if(instance<0) instance = numInstances-1;
+     updateI(instances);
+  }
+</script>
+
+
+</head>
+<body>
+
+<form action="http://129.206.117.250/opengm/index-view.php?bench=cvpr2013&amp;model=seg-3d&amp;view=2">
+<div style="font-size:20px; display:inline;"><b>Model: seg-3d&nbsp;&nbsp;</b></div><input type="button" value="Small table" onclick="updateSmallTable()"> 
+<input type="button" value="Large table" onclick="updateLargeTable()">
+<input type="button" value="Plots" onclick="updateI(-1)">
+<input type="button" value="<<" onclick="updateIdown()">
+ <select name="instance" onchange="updateI(this.value)">
+<option value=0>mc3d1-model</option><option value=1>mc3d2-model</option> </select>
+<input type="button" value=">>" onclick="updateIup()">
+</form>
+<hr>
+<div id="content" align="left"> hallo</div>
+
+</body>
+
+<!-- Mirrored from 129.206.117.250/opengm/index-view.php?bench=cvpr2013&model=seg-3d by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 13:29:48 GMT -->
+</html>

@@ -1,0 +1,119 @@
+<html>
+
+<!-- Mirrored from 129.206.117.250/opengm/index-view.php?bench=cvpr2013&model=inpainting-n4 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 13:29:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>View</title>
+<style type="text/css">
+td {text-align:right; padding-left:20px; white-space: nowrap;}
+tr.line td{border-top-width: 1px; border-top-style: solid; border-top-color: #999999; text-align:right; padding-left:20px; white-space: nowrap;}
+tr.noline td{text-align:right; padding-left:20px; white-space: nowrap;}
+</style>
+<link href="../../ando.hci.uni-heidelberg.de/opengm/flot/src/hci.flot.charts.stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Enable support for Internet Explorer < 9 -->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../lib/flot-v0.8/excanvas.min.js"></script><![endif]-->
+     
+<!-- load jquery and flot -->
+<script> var pathname = window.location.pathname;</script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.flot.selection.js"></script>
+<!-- load flot plugin to support axis labels -->
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot_axis_labels_plugin/jquery.flot.axislabels.js"></script> 
+<!-- load hci flot charts -->
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/src/hci.flot.charts.js"></script>
+
+<script type="text/javascript">
+var instances   = ["triplepoint4-plain-ring-inverse","triplepoint4-plain-ring"];
+var uppercutoff = [1842.387,513.2942];
+var lowercutoff = [410.2659,484.2979];
+var model       = "inpainting-n4";
+var benchpath   = "benchmarks/CVPR2013/index.html";
+var bench       = "cvpr2013";
+</script>
+
+
+<script type="text/javascript">
+  var instance=0;
+  var numInstances=2;
+
+  function init()
+  {
+     updateSmallTable();
+  }
+  window.onload=init;
+
+  function update(C)
+  {
+     document.getElementById('content').innerHTML = C;
+  }
+
+  function updateSmallTable()
+  {
+          document.getElementById('content').innerHTML = unescape('%3Ctable%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Cb%3E%20%20%20%20%20%20%20%20%20%20%20algorithm%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3Emean%20run%20time%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20mean%20value%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20mean%20bound%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20%20best%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3Ever.%20opt%3C%2Fb%3E%3C%2Ftd%3E%20%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20FastPD%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%200.02%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20454.75%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20FastPD-LF2%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%200.37%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20454.75%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20mrf-LBP-LF2%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%205.33%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20475.56%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20mrf-BPS%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%202.13%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20454.35%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20100.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20mrf-EXPANSION%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%200.02%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20454.35%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20100.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20mrf-SWAP%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%200.02%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20454.75%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20mrf-TRWS%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%202.19%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20490.48%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20448.09%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20ogm-BUNDLE-A%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%2076.84%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20455.25%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20448.23%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20ogm-BUNDLE-H%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%2036.55%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20455.25%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20448.22%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20ogm-SUBGRAD-A%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%2047.20%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20455.25%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20447.76%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20ogm-ILP%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%201816.11%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20454.75%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20450.36%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20ogm-LBP%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%2076.21%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20480.27%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20MCA%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%201810.59%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%204618.38%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20448.07%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20MCA%20%286h%29%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%2012262.31%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20474.38%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20450.03%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20ogm-TRBP%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%2090.46%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20480.27%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20TRWS-LF2%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%204.68%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20489.30%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20448.09%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2050.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3C%2Ftable%3E');
+  }
+
+  function updateLargeTable()
+  {
+          document.getElementById('content').innerHTML = unescape('%3Ctable%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cb%3EFastPD%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EFastPD-LF2%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Emrf-LBP-LF2%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Emrf-BPS%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Emrf-EXPANSION%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Emrf-SWAP%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Emrf-TRWS%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-BUNDLE-A%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-BUNDLE-H%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-SUBGRAD-A%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-ILP%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-LBP%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EMCA%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EMCA%20%286h%29%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-TRBP%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3ETRWS-LF2%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Etriplepoint4-plain-ring-inverse%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20424.90%3C%2Ftd%3E%3Ctd%3E%20424.90%3C%2Ftd%3E%3Ctd%3E%20466.53%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20424.12%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20424.12%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20424.90%3C%2Ftd%3E%3Ctd%3E%20496.37%3C%2Ftd%3E%3Ctd%3E%20425.90%3C%2Ftd%3E%3Ctd%3E%20425.90%3C%2Ftd%3E%3Ctd%3E%20425.90%3C%2Ftd%3E%3Ctd%3E%20424.90%3C%2Ftd%3E%3Ctd%3E%20475.95%3C%2Ftd%3E%3Ctd%3E%208752.18%3C%2Ftd%3E%3Ctd%3E%20464.17%3C%2Ftd%3E%3Ctd%3E%20475.95%3C%2Ftd%3E%3Ctd%3E%20494.02%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20411.59%3C%2Ftd%3E%3Ctd%3E%20411.87%3C%2Ftd%3E%3Ctd%3E%20411.84%3C%2Ftd%3E%3Ctd%3E%20410.92%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20416.13%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20411.55%3C%2Ftd%3E%3Ctd%3E%20415.48%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20411.59%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%200.02%3C%2Ftd%3E%3Ctd%3E%200.37%3C%2Ftd%3E%3Ctd%3E%205.34%3C%2Ftd%3E%3Ctd%3E%202.12%3C%2Ftd%3E%3Ctd%3E%200.02%3C%2Ftd%3E%3Ctd%3E%200.01%3C%2Ftd%3E%3Ctd%3E%202.19%3C%2Ftd%3E%3Ctd%3E%2074.08%3C%2Ftd%3E%3Ctd%3E%2072.51%3C%2Ftd%3E%3Ctd%3E%2081.67%3C%2Ftd%3E%3Ctd%3E%203585.41%3C%2Ftd%3E%3Ctd%3E%20115.47%3C%2Ftd%3E%3Ctd%3E%203608.80%3C%2Ftd%3E%3Ctd%3E%2024512.29%3C%2Ftd%3E%3Ctd%3E%20137.01%3C%2Ftd%3E%3Ctd%3E%204.62%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Etriplepoint4-plain-ring%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20484.59%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20484.59%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%200.02%3C%2Ftd%3E%3Ctd%3E%200.36%3C%2Ftd%3E%3Ctd%3E%205.32%3C%2Ftd%3E%3Ctd%3E%202.14%3C%2Ftd%3E%3Ctd%3E%200.02%3C%2Ftd%3E%3Ctd%3E%200.02%3C%2Ftd%3E%3Ctd%3E%202.19%3C%2Ftd%3E%3Ctd%3E%2079.60%3C%2Ftd%3E%3Ctd%3E%200.58%3C%2Ftd%3E%3Ctd%3E%2012.72%3C%2Ftd%3E%3Ctd%3E%2046.81%3C%2Ftd%3E%3Ctd%3E%2036.95%3C%2Ftd%3E%3Ctd%3E%2012.39%3C%2Ftd%3E%3Ctd%3E%2012.32%3C%2Ftd%3E%3Ctd%3E%2043.92%3C%2Ftd%3E%3Ctd%3E%204.75%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20energy%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%20454.75%3C%2Ftd%3E%3Ctd%3E%20454.75%3C%2Ftd%3E%3Ctd%3E%20475.56%3C%2Ftd%3E%3Ctd%3E%20454.35%3C%2Ftd%3E%3Ctd%3E%20454.35%3C%2Ftd%3E%3Ctd%3E%20454.75%3C%2Ftd%3E%3Ctd%3E%20454.75%3C%2Ftd%3E%3Ctd%3E%20455.25%3C%2Ftd%3E%3Ctd%3E%20455.25%3C%2Ftd%3E%3Ctd%3E%20455.25%3C%2Ftd%3E%3Ctd%3E%20454.75%3C%2Ftd%3E%3Ctd%3E%20479.09%3C%2Ftd%3E%3Ctd%3E%20499.12%3C%2Ftd%3E%3Ctd%3E%20463.38%3C%2Ftd%3E%3Ctd%3E%20479.09%3C%2Ftd%3E%3Ctd%3E%20489.30%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20bound%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20448.09%3C%2Ftd%3E%3Ctd%3E%20448.23%3C%2Ftd%3E%3Ctd%3E%20448.22%3C%2Ftd%3E%3Ctd%3E%20447.76%3C%2Ftd%3E%3Ctd%3E%20450.36%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20448.07%3C%2Ftd%3E%3Ctd%3E%20450.03%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20448.09%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20runtime%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B0.02%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B0.37%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B5.33%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B2.13%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B0.02%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B0.02%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B2.19%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B76.84%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B36.55%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B47.20%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B1816.11%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B76.21%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B1810.59%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B12262.31%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B90.46%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B4.68%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Ebest%20value%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Ebest%20bound%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Everified%20opt%3Cb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2050.00%3C%2Ftd%3E%3C%2Ftr%3E%0A');
+  }
+    
+  function updateI(C)
+  {
+     if(C>=0)  instance = 0+parseInt(C);
+document.getElementById('content').innerHTML = '<div id="instancename" align="center" style=\"font-size:30px; width:900px;\">'+instances[instance]+'</div><div class="demo-container"><!-- Create placeholders --><div id="chart" class="demo-placeholder" style="float:left; width:700px;"></div><div id="zoom" class="demo-placeholder" style="float:right;width:250px; height:150px;"></div><div id="choices" style="float:right; width:250px;">Datasets</div> <div id="options" style="float:right; width:250px;">Options</div></div>';
+
+   var loadedData;
+   var options;
+ 
+   loadedData = "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-full.json";
+   options = { 
+        relatedDatasets : "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-related.json", 
+        reducedData : "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-reduced.json",
+        logScaleX : true,
+        labelX : "Time",
+        labelY : "Energy",
+        yMax : uppercutoff[instance],
+        yMin : lowercutoff[instance]
+   };
+            
+   // plot data
+   $.hciPlotChart(loadedData, "#choices", "#zoom", "#chart", "#options", options);
+    
+     //document.getElementById('content').innerHTML = '<br><center>Not supported yet! (Instance '+instance+') </center><br>';
+     //document.getElementById('content').innerHTML = '<img src="plots/matching1.jpg"  width="600">';
+  } 
+  function updateIup()
+  {
+     instance = instance+1;
+     if(instance>numInstances-1) instance=0;
+     updateI(instances);
+   } 
+  function updateIdown()
+  {
+     instance = (instance-1);
+     if(instance<0) instance = numInstances-1;
+     updateI(instances);
+  }
+</script>
+
+
+</head>
+<body>
+
+<form action="http://129.206.117.250/opengm/index-view.php?bench=cvpr2013&amp;model=inpainting-n4&amp;view=2">
+<div style="font-size:20px; display:inline;"><b>Model: inpainting-n4&nbsp;&nbsp;</b></div><input type="button" value="Small table" onclick="updateSmallTable()"> 
+<input type="button" value="Large table" onclick="updateLargeTable()">
+<input type="button" value="Plots" onclick="updateI(-1)">
+<input type="button" value="<<" onclick="updateIdown()">
+ <select name="instance" onchange="updateI(this.value)">
+<option value=0>triplepoint4-plain-ring-inverse</option><option value=1>triplepoint4-plain-ring</option> </select>
+<input type="button" value=">>" onclick="updateIup()">
+</form>
+<hr>
+<div id="content" align="left"> hallo</div>
+
+</body>
+
+<!-- Mirrored from 129.206.117.250/opengm/index-view.php?bench=cvpr2013&model=inpainting-n4 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 13:29:45 GMT -->
+</html>

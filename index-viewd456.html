@@ -1,0 +1,119 @@
+<html>
+
+<!-- Mirrored from 129.206.117.250/opengm/index-view.php?bench=cvpr2013&model=brain by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 13:29:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>View</title>
+<style type="text/css">
+td {text-align:right; padding-left:20px; white-space: nowrap;}
+tr.line td{border-top-width: 1px; border-top-style: solid; border-top-color: #999999; text-align:right; padding-left:20px; white-space: nowrap;}
+tr.noline td{text-align:right; padding-left:20px; white-space: nowrap;}
+</style>
+<link href="../../ando.hci.uni-heidelberg.de/opengm/flot/src/hci.flot.charts.stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Enable support for Internet Explorer < 9 -->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../lib/flot-v0.8/excanvas.min.js"></script><![endif]-->
+     
+<!-- load jquery and flot -->
+<script> var pathname = window.location.pathname;</script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.flot.selection.js"></script>
+<!-- load flot plugin to support axis labels -->
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot_axis_labels_plugin/jquery.flot.axislabels.js"></script> 
+<!-- load hci flot charts -->
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/src/hci.flot.charts.js"></script>
+
+<script type="text/javascript">
+var instances   = ["t1_icbm_normal_1mm_pn3_rf20","t1_icbm_normal_3mm_pn3_rf20","t1_icbm_normal_5mm_pn3_rf20","t1_icbm_normal_7mm_pn3_rf20","t1_icbm_normal_9mm_pn3_rf20"];
+var uppercutoff = [75721866,26601940,16966376,12663827,10081163];
+var lowercutoff = [75661126.2825,26597119.4576,16963559.8522,12661503.1513,10078819.8538];
+var model       = "brain";
+var benchpath   = "benchmarks/CVPR2013/index.html";
+var bench       = "cvpr2013";
+</script>
+
+
+<script type="text/javascript">
+  var instance=0;
+  var numInstances=5;
+
+  function init()
+  {
+     updateSmallTable();
+  }
+  window.onload=init;
+
+  function update(C)
+  {
+     document.getElementById('content').innerHTML = C;
+  }
+
+  function updateSmallTable()
+  {
+          document.getElementById('content').innerHTML = unescape('%3Ctable%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Cb%3E%20%20%20%20%20%20%20%20%20%20%20algorithm%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3Emean%20run%20time%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20mean%20value%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20mean%20bound%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20%20best%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3Ever.%20opt%3C%2Fb%3E%3C%2Ftd%3E%20%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20FastPD%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%208.69%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%2028394880.80%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BPS%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%201119.97%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%2028407033.20%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20EXPANSION%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20256.38%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%2028394414.60%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20MCA%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%2015109.80%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%2030894778.60%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%2026233876.30%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2060.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2060.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SWAP%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20332.56%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%2028395523.60%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20TRWS%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%201448.56%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%2028392607.40%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%2028392431.40%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2040.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3C%2Ftable%3E');
+  }
+
+  function updateLargeTable()
+  {
+          document.getElementById('content').innerHTML = unescape('%3Ctable%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cb%3EFastPD%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EBPS%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EEXPANSION%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EMCA%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3ESWAP%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3ETRWS%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Et1-icbm-normal-1mm-pn3-rf20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%2075665951.00%3C%2Ftd%3E%3Ctd%3E%2075721866.00%3C%2Ftd%3E%3Ctd%3E%2075665025.00%3C%2Ftd%3E%3Ctd%3E%2084871188.00%3C%2Ftd%3E%3Ctd%3E%2075668026.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2075661674.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%2067757808.00%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2075661150.00%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%2034.68%3C%2Ftd%3E%3Ctd%3E%203222.10%3C%2Ftd%3E%3Ctd%3E%20831.60%3C%2Ftd%3E%3Ctd%3E%2063869.76%3C%2Ftd%3E%3Ctd%3E%20993.08%3C%2Ftd%3E%3Ctd%3E%204165.67%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Et1-icbm-normal-3mm-pn3-rf20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%2026600041.00%3C%2Ftd%3E%3Ctd%3E%2026601940.00%3C%2Ftd%3E%3Ctd%3E%2026599365.00%3C%2Ftd%3E%3Ctd%3E%2029898818.00%3C%2Ftd%3E%3Ctd%3E%2026600488.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2026597216.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%2023707686.50%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2026597120.00%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%203.60%3C%2Ftd%3E%3Ctd%3E%201050.96%3C%2Ftd%3E%3Ctd%3E%20229.63%3C%2Ftd%3E%3Ctd%3E%206219.48%3C%2Ftd%3E%3Ctd%3E%20324.29%3C%2Ftd%3E%3Ctd%3E%201376.98%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Et1-icbm-normal-5mm-pn3-rf20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%2016965372.00%3C%2Ftd%3E%3Ctd%3E%2016966376.00%3C%2Ftd%3E%3Ctd%3E%2016965010.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2016963560.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%2016965849.00%3C%2Ftd%3E%3Ctd%3E%2016963638.00%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2016963560.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2016963560.00%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%202.17%3C%2Ftd%3E%3Ctd%3E%20567.30%3C%2Ftd%3E%3Ctd%3E%20108.92%3C%2Ftd%3E%3Ctd%3E%203350.90%3C%2Ftd%3E%3Ctd%3E%20182.34%3C%2Ftd%3E%3Ctd%3E%20677.65%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Et1-icbm-normal-7mm-pn3-rf20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%2012663105.00%3C%2Ftd%3E%3Ctd%3E%2012663827.00%3C%2Ftd%3E%3Ctd%3E%2012662909.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2012661506.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%2012663157.00%3C%2Ftd%3E%3Ctd%3E%2012661613.00%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2012661506.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2012661506.00%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%201.80%3C%2Ftd%3E%3Ctd%3E%20396.77%3C%2Ftd%3E%3Ctd%3E%2053.25%3C%2Ftd%3E%3Ctd%3E%201370.80%3C%2Ftd%3E%3Ctd%3E%20101.08%3C%2Ftd%3E%3Ctd%3E%20589.67%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Et1-icbm-normal-9mm-pn3-rf20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%2010079935.00%3C%2Ftd%3E%3Ctd%3E%2010081157.00%3C%2Ftd%3E%3Ctd%3E%2010079764.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2010078821.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%2010080098.00%3C%2Ftd%3E%3Ctd%3E%2010078896.00%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2010078821.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2010078821.00%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%201.21%3C%2Ftd%3E%3Ctd%3E%20362.74%3C%2Ftd%3E%3Ctd%3E%2058.51%3C%2Ftd%3E%3Ctd%3E%20738.04%3C%2Ftd%3E%3Ctd%3E%2062.00%3C%2Ftd%3E%3Ctd%3E%20432.85%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20energy%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%2028394880.80%3C%2Ftd%3E%3Ctd%3E%2028407033.20%3C%2Ftd%3E%3Ctd%3E%2028394414.60%3C%2Ftd%3E%3Ctd%3E%2029919089.00%3C%2Ftd%3E%3Ctd%3E%2028395523.60%3C%2Ftd%3E%3Ctd%3E%2028392589.80%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20bound%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%2026233876.30%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%2028392431.40%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20runtime%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B8.69%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B1119.97%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B256.38%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B15109.80%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B332.56%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B1448.56%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Ebest%20value%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2060.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2040.00%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Ebest%20bound%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2060.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Everified%20opt%3Cb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2060.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3C%2Ftr%3E%0A');
+  }
+    
+  function updateI(C)
+  {
+     if(C>=0)  instance = 0+parseInt(C);
+document.getElementById('content').innerHTML = '<div id="instancename" align="center" style=\"font-size:30px; width:900px;\">'+instances[instance]+'</div><div class="demo-container"><!-- Create placeholders --><div id="chart" class="demo-placeholder" style="float:left; width:700px;"></div><div id="zoom" class="demo-placeholder" style="float:right;width:250px; height:150px;"></div><div id="choices" style="float:right; width:250px;">Datasets</div> <div id="options" style="float:right; width:250px;">Options</div></div>';
+
+   var loadedData;
+   var options;
+ 
+   loadedData = "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-full.json";
+   options = { 
+        relatedDatasets : "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-related.json", 
+        reducedData : "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-reduced.json",
+        logScaleX : true,
+        labelX : "Time",
+        labelY : "Energy",
+        yMax : uppercutoff[instance],
+        yMin : lowercutoff[instance]
+   };
+            
+   // plot data
+   $.hciPlotChart(loadedData, "#choices", "#zoom", "#chart", "#options", options);
+    
+     //document.getElementById('content').innerHTML = '<br><center>Not supported yet! (Instance '+instance+') </center><br>';
+     //document.getElementById('content').innerHTML = '<img src="plots/matching1.jpg"  width="600">';
+  } 
+  function updateIup()
+  {
+     instance = instance+1;
+     if(instance>numInstances-1) instance=0;
+     updateI(instances);
+   } 
+  function updateIdown()
+  {
+     instance = (instance-1);
+     if(instance<0) instance = numInstances-1;
+     updateI(instances);
+  }
+</script>
+
+
+</head>
+<body>
+
+<form action="http://129.206.117.250/opengm/index-view.php?bench=cvpr2013&amp;model=brain&amp;view=2">
+<div style="font-size:20px; display:inline;"><b>Model: brain&nbsp;&nbsp;</b></div><input type="button" value="Small table" onclick="updateSmallTable()"> 
+<input type="button" value="Large table" onclick="updateLargeTable()">
+<input type="button" value="Plots" onclick="updateI(-1)">
+<input type="button" value="<<" onclick="updateIdown()">
+ <select name="instance" onchange="updateI(this.value)">
+<option value=0>t1_icbm_normal_1mm_pn3_rf20</option><option value=1>t1_icbm_normal_3mm_pn3_rf20</option><option value=2>t1_icbm_normal_5mm_pn3_rf20</option><option value=3>t1_icbm_normal_7mm_pn3_rf20</option><option value=4>t1_icbm_normal_9mm_pn3_rf20</option> </select>
+<input type="button" value=">>" onclick="updateIup()">
+</form>
+<hr>
+<div id="content" align="left"> hallo</div>
+
+</body>
+
+<!-- Mirrored from 129.206.117.250/opengm/index-view.php?bench=cvpr2013&model=brain by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 13:29:46 GMT -->
+</html>

@@ -1,0 +1,119 @@
+<html>
+
+<!-- Mirrored from 129.206.117.250/opengm/index-view.php?bench=cvpr2013&model=color-seg by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 13:29:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>View</title>
+<style type="text/css">
+td {text-align:right; padding-left:20px; white-space: nowrap;}
+tr.line td{border-top-width: 1px; border-top-style: solid; border-top-color: #999999; text-align:right; padding-left:20px; white-space: nowrap;}
+tr.noline td{text-align:right; padding-left:20px; white-space: nowrap;}
+</style>
+<link href="../../ando.hci.uni-heidelberg.de/opengm/flot/src/hci.flot.charts.stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Enable support for Internet Explorer < 9 -->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../lib/flot-v0.8/excanvas.min.js"></script><![endif]-->
+     
+<!-- load jquery and flot -->
+<script> var pathname = window.location.pathname;</script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.flot.js"></script>
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot-v0.8/jquery.flot.selection.js"></script>
+<!-- load flot plugin to support axis labels -->
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/lib/flot_axis_labels_plugin/jquery.flot.axislabels.js"></script> 
+<!-- load hci flot charts -->
+<script language="javascript" type="text/javascript" src="../../ando.hci.uni-heidelberg.de/opengm/flot/src/hci.flot.charts.js"></script>
+
+<script type="text/javascript">
+var instances   = ["colseg-cow3","colseg-cow4","colseg-garden4"];
+var uppercutoff = [455739908,452230314,18229827];
+var lowercutoff = [455389558.3017,451811187.5695,18206942.0117];
+var model       = "color-seg";
+var benchpath   = "benchmarks/CVPR2013/index.html";
+var bench       = "cvpr2013";
+</script>
+
+
+<script type="text/javascript">
+  var instance=0;
+  var numInstances=3;
+
+  function init()
+  {
+     updateSmallTable();
+  }
+  window.onload=init;
+
+  function update(C)
+  {
+     document.getElementById('content').innerHTML = C;
+  }
+
+  function updateSmallTable()
+  {
+          document.getElementById('content').innerHTML = unescape('%3Ctable%3E%0A%3Ctr%3E%0A%3Ctd%3E%3Cb%3E%20%20%20%20%20%20%20%20%20%20%20algorithm%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3Emean%20run%20time%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20mean%20value%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20mean%20bound%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3E%20%20%20%20best%3C%2Fb%3E%3C%2Ftd%3E%20%3Ctd%3E%3Cb%3Ever.%20opt%3C%2Fb%3E%3C%2Ftd%3E%20%3C%2Ftr%3E%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20FastPD%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%200.45%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472275.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2066.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20BPS%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20110.02%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308733349.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20EXPANSION%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%206.42%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472275.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2066.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20FastPD-LF2%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%2014.85%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472275.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2066.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20ogm-BUNDLE-A%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%203097.51%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472333.33%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472261.45%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2033.33%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20ogm-BUNDLE-H%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%203024.98%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472439.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472264.89%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2033.33%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20ogm-SUBGRAD-A%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%203068.16%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308486445.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308471847.77%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20ogm-LBP%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%201252.89%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308492950.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20MCA%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20149.43%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472274.33%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472274.33%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20100.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20100.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20ogm-TRBP%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%204476.64%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308492909.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20SWAP%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%206.50%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472292.33%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20%20%20-Inf%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2066.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%200.00%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20TRWS%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20150.47%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472310.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472270.43%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2066.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2033.33%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3Ctr%3E%0A%3Ctd%3E%20%20%20%20%20%20%20%20%20%20%20%20TRWS-LF2%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%20%20%20%20%20140.43%20sec%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472294.33%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20308472270.43%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2066.67%3C%2Ftd%3E%20%3Ctd%20align%3D%22right%22%3E%20%20%2033.33%3C%2Ftd%3E%20%3C%2Ftr%3E%20%0A%3C%2Ftable%3E');
+  }
+
+  function updateLargeTable()
+  {
+          document.getElementById('content').innerHTML = unescape('%3Ctable%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cb%3EFastPD%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EBPS%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EEXPANSION%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EFastPD-LF2%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-BUNDLE-A%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-BUNDLE-H%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-SUBGRAD-A%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-LBP%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3EMCA%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3Eogm-TRBP%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3ESWAP%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3ETRWS%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3ETRWS-LF2%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Ecolseg-cow3%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20455392947.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20455739908.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20455392947.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20455392947.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20455393027.00%3C%2Ftd%3E%3Ctd%3E%20455393058.00%3C%2Ftd%3E%3Ctd%3E%20455400064.00%3C%2Ftd%3E%3Ctd%3E%20455421935.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20455392947.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20455421935.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20455392947.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20455392947.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20455392947.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20455392928.68%3C%2Ftd%3E%3Ctd%3E%20455392939.71%3C%2Ftd%3E%3Ctd%3E%20455392737.21%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20455392947.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20455392939.55%3C%2Ftd%3E%3Ctd%3E%20455392939.55%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%200.54%3C%2Ftd%3E%3Ctd%3E%20150.72%3C%2Ftd%3E%3Ctd%3E%207.70%3C%2Ftd%3E%3Ctd%3E%2016.56%3C%2Ftd%3E%3Ctd%3E%204329.66%3C%2Ftd%3E%3Ctd%3E%204177.46%3C%2Ftd%3E%3Ctd%3E%204290.69%3C%2Ftd%3E%3Ctd%3E%201028.76%3C%2Ftd%3E%3Ctd%3E%20159.91%3C%2Ftd%3E%3Ctd%3E%205616.79%3C%2Ftd%3E%3Ctd%3E%207.47%3C%2Ftd%3E%3Ctd%3E%20193.25%3C%2Ftd%3E%3Ctd%3E%20180.34%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Ecolseg-cow4%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20451816855.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20452230314.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20451816855.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20451816855.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20451816952.00%3C%2Ftd%3E%3Ctd%3E%20451817240.00%3C%2Ftd%3E%3Ctd%3E%20451852229.00%3C%2Ftd%3E%3Ctd%3E%20451846264.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20451816855.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20451846264.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20451816855.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20451816964.00%3C%2Ftd%3E%3Ctd%3E%20451816915.00%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20451816837.20%3C%2Ftd%3E%3Ctd%3E%20451816834.94%3C%2Ftd%3E%3Ctd%3E%20451815785.80%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%20451816855.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20451816850.76%3C%2Ftd%3E%3Ctd%3E%20451816850.76%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%200.76%3C%2Ftd%3E%3Ctd%3E%20170.63%3C%2Ftd%3E%3Ctd%3E%2011.11%3C%2Ftd%3E%3Ctd%3E%2026.68%3C%2Ftd%3E%3Ctd%3E%204754.03%3C%2Ftd%3E%3Ctd%3E%204687.06%3C%2Ftd%3E%3Ctd%3E%204708.47%3C%2Ftd%3E%3Ctd%3E%202699.84%3C%2Ftd%3E%3Ctd%3E%20283.58%3C%2Ftd%3E%3Ctd%3E%207443.81%3C%2Ftd%3E%3Ctd%3E%2011.59%3C%2Ftd%3E%3Ctd%3E%20246.41%3C%2Ftd%3E%3Ctd%3E%20229.67%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3Ecolseg-garden4%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20value%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%2018207023.00%3C%2Ftd%3E%3Ctd%3E%2018229827.00%3C%2Ftd%3E%3Ctd%3E%2018207025.00%3C%2Ftd%3E%3Ctd%3E%2018207023.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2018207021.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2018207021.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%2018207042.00%3C%2Ftd%3E%3Ctd%3E%2018210653.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2018207021.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%2018210530.00%3C%2Ftd%3E%3Ctd%3E%2018207075.00%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2018207021.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2018207021.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22noline%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20bound%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%2018207018.48%3C%2Ftd%3E%3Ctd%3E%2018207020.03%3C%2Ftd%3E%3Ctd%3E%2018207020.28%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2018207021.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2018207021.00%3C%2Fb%3E%3C%2Ftd%3E%3Ctd%3E%3Cb%3E%2018207021.00%3C%2Fb%3E%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%3E%3Ctd%3E%26nbsp%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%3E%20runtime%20%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%200.04%3C%2Ftd%3E%3Ctd%3E%208.71%3C%2Ftd%3E%3Ctd%3E%200.44%3C%2Ftd%3E%3Ctd%3E%201.32%3C%2Ftd%3E%3Ctd%3E%20208.85%3C%2Ftd%3E%3Ctd%3E%20210.42%3C%2Ftd%3E%3Ctd%3E%20205.32%3C%2Ftd%3E%3Ctd%3E%2030.06%3C%2Ftd%3E%3Ctd%3E%204.80%3C%2Ftd%3E%3Ctd%3E%20369.31%3C%2Ftd%3E%3Ctd%3E%200.45%3C%2Ftd%3E%3Ctd%3E%2011.75%3C%2Ftd%3E%3Ctd%3E%2011.28%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20energy%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%20308472275.00%3C%2Ftd%3E%3Ctd%3E%20308733349.67%3C%2Ftd%3E%3Ctd%3E%20308472275.67%3C%2Ftd%3E%3Ctd%3E%20308472275.00%3C%2Ftd%3E%3Ctd%3E%20308472333.33%3C%2Ftd%3E%3Ctd%3E%20308472439.67%3C%2Ftd%3E%3Ctd%3E%20308486445.00%3C%2Ftd%3E%3Ctd%3E%20308492950.67%3C%2Ftd%3E%3Ctd%3E%20308472274.33%3C%2Ftd%3E%3Ctd%3E%20308492909.67%3C%2Ftd%3E%3Ctd%3E%20308472292.33%3C%2Ftd%3E%3Ctd%3E%20308472294.33%3C%2Ftd%3E%3Ctd%3E%20308472294.33%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20bound%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20308472261.45%3C%2Ftd%3E%3Ctd%3E%20308472264.89%3C%2Ftd%3E%3Ctd%3E%20308471847.77%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20308472274.33%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20-Inf%3C%2Ftd%3E%3Ctd%3E%20308472270.43%3C%2Ftd%3E%3Ctd%3E%20308472270.43%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Emean%20runtime%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B0.45%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B110.02%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B6.42%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B14.85%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B3097.51%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B3024.98%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B3068.16%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B1252.89%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B149.43%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B4476.64%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B6.50%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B150.47%3C%2Ftd%3E%3Ctd%3E%20%26nbsp%3B140.43%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Ebest%20value%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%2066.67%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2066.67%3C%2Ftd%3E%3Ctd%3E%2066.67%3C%2Ftd%3E%3Ctd%3E%2033.33%3C%2Ftd%3E%3Ctd%3E%2033.33%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2066.67%3C%2Ftd%3E%3Ctd%3E%2066.67%3C%2Ftd%3E%3Ctd%3E%2066.67%3C%2Ftd%3E%3Ctr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Ebest%20bound%3C%2Fb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2066.67%3C%2Ftd%3E%3Ctd%3E%2066.67%3C%2Ftd%3E%3C%2Ftr%3E%0A%3Ctr%20class%3D%22line%22%3E%3Ctd%3E%26nbsp%3B%3C%2Ftd%3E%3Ctd%3E%3Cdiv%20align%3D%22left%22%20style%3D%22white-space%3A%20nowrap%3B%22%3E%3Cb%3Everified%20opt%3Cb%3E%3C%2Fdiv%3E%3C%2Ftd%3E%20%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%20100.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%200.00%3C%2Ftd%3E%3Ctd%3E%2033.33%3C%2Ftd%3E%3Ctd%3E%2033.33%3C%2Ftd%3E%3C%2Ftr%3E%0A');
+  }
+    
+  function updateI(C)
+  {
+     if(C>=0)  instance = 0+parseInt(C);
+document.getElementById('content').innerHTML = '<div id="instancename" align="center" style=\"font-size:30px; width:900px;\">'+instances[instance]+'</div><div class="demo-container"><!-- Create placeholders --><div id="chart" class="demo-placeholder" style="float:left; width:700px;"></div><div id="zoom" class="demo-placeholder" style="float:right;width:250px; height:150px;"></div><div id="choices" style="float:right; width:250px;">Datasets</div> <div id="options" style="float:right; width:250px;">Options</div></div>';
+
+   var loadedData;
+   var options;
+ 
+   loadedData = "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-full.json";
+   options = { 
+        relatedDatasets : "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-related.json", 
+        reducedData : "http://ando.hci.uni-heidelberg.de/opengm/"+benchpath+"json/"+model+"/"+instances[instance]+"-reduced.json",
+        logScaleX : true,
+        labelX : "Time",
+        labelY : "Energy",
+        yMax : uppercutoff[instance],
+        yMin : lowercutoff[instance]
+   };
+            
+   // plot data
+   $.hciPlotChart(loadedData, "#choices", "#zoom", "#chart", "#options", options);
+    
+     //document.getElementById('content').innerHTML = '<br><center>Not supported yet! (Instance '+instance+') </center><br>';
+     //document.getElementById('content').innerHTML = '<img src="plots/matching1.jpg"  width="600">';
+  } 
+  function updateIup()
+  {
+     instance = instance+1;
+     if(instance>numInstances-1) instance=0;
+     updateI(instances);
+   } 
+  function updateIdown()
+  {
+     instance = (instance-1);
+     if(instance<0) instance = numInstances-1;
+     updateI(instances);
+  }
+</script>
+
+
+</head>
+<body>
+
+<form action="http://129.206.117.250/opengm/index-view.php?bench=cvpr2013&amp;model=color-seg&amp;view=2">
+<div style="font-size:20px; display:inline;"><b>Model: color-seg&nbsp;&nbsp;</b></div><input type="button" value="Small table" onclick="updateSmallTable()"> 
+<input type="button" value="Large table" onclick="updateLargeTable()">
+<input type="button" value="Plots" onclick="updateI(-1)">
+<input type="button" value="<<" onclick="updateIdown()">
+ <select name="instance" onchange="updateI(this.value)">
+<option value=0>colseg-cow3</option><option value=1>colseg-cow4</option><option value=2>colseg-garden4</option> </select>
+<input type="button" value=">>" onclick="updateIup()">
+</form>
+<hr>
+<div id="content" align="left"> hallo</div>
+
+</body>
+
+<!-- Mirrored from 129.206.117.250/opengm/index-view.php?bench=cvpr2013&model=color-seg by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Nov 2025 13:29:45 GMT -->
+</html>

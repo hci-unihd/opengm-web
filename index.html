@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+<html>
+  
+<!-- Mirrored from 129.206.117.250/opengm/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Nov 2025 16:16:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>OpenGM2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <br>
+    <div class="top">
+      <div class="titlebar">
+        <a class="title" href="index-2.html">OpenGM2</a><span class="subtab">&nbsp;</span><a class="subtab" href="index5c2e.html?l0=library">Library</a><span class="subtab">&bull;</span><a class="subtab" href="indexfda0.html?l0=contacts">Contacts</a><span class="subtab">&bull;</span><a class="subtab" href="indexb242.html?l0=algs">Algorithms</a><span class="subtab">&bull;</span><a class="subtab" href="indexe09c.html?l0=ref">References</a><span class="subtab">&bull;</span><a class="subtab" href="index506f.html?l0=benchmark">Benchmark</a><span class="subtab">&bull;</span><span class="lastsubtab"><span class="lastsubtab2">&nbsp;</span></span>      </div>
+    </div>
+    <div class="main">
+
+<div style="position: relative; top:10px; left: 20px; width: 900px;">
+
+<h3>OpenGM</h3>
+
+<p align="justify">
+OpenGM is a C++ template library for discrete factor graph models and distributive
+operations on these models. It includes state-of-the-art optimization and inference
+algorithms beyond message passing.
+OpenGM handles large models efficiently, since (i) functions that
+occur repeatedly need to be stored only once and (ii) when functions require
+different parametric or non-parametric encodings, multiple encodings can be used
+alongside each other, in the same model, using included and custom C++ code.
+No restrictions are imposed on the factor graph or the operations of the model.
+OpenGM is modular and extendible. Elementary data types can be chosen to maximize
+efficiency. The graphical model data structure, inference algorithms and different
+encodings of functions inter-operate through well-defined interfaces. The binary
+OpenGM file format is based on the HDF5 standard and incorporates user extensions
+automatically.
+</p>
+
+<h3>Features</h3>
+<p align="justify">
+<u><b>Factor Graph Models:</b></u> <img src="html/images/grec.png" style="float:right; margin: 5px 5px;" width="150" >
+Our implementation can deal with factor graphs [55] 
+of <i>any order and structure</i>, from second order grid graphs to irregular higher-order models. We support
+<i>arbitrary (commutative and associative) operations</i>, including sum, product, conjunction and disjunction,
+<i>flexible number of labels</i> (different variables can have differently many labels), and
+<i>function sharing across factors</i>.
+The example graph on the right illustrate a second factor graph with 5 variable nodes, a single unary factor connected to each variable node and 
+10 second order factors. The corresponding objective function factorize according to this structure and the operation addition into
+<br><br><center> J(x) = sum_f \varphi_f(x_{ne(f)}</center><br><br>
+</p>
+
+<p align="justify">
+<u><b>Functions:</b></u><img src="html/images/wrapper.png" style="float:right; margin: 5px 5px;" width="150">
+Our function type abstraction enables different (built-in and custom) encodings to be used alongside each other.
+Naitively OpenGM provides:
+<i>Explicit function</i> (multi-dimensional table),
+<i>sparse function</i>  (sparse multi-dimensional table),
+<i>Potts functions</i>  (different types, including higher-order),
+<i>truncated absolute difference</i>,
+<i>truncated squared difference</i>, and
+<i>views</i> that treat one graphical model as a function within another graphical model.
+Furthermore, functions can be easyly included into OpenGM with full support and efficient storage.
+
+As illustrated in the right, each factor is associated to a function out of a predefined list of different function types.
+</p>
+
+<p align="justify">
+<u><b>Algorithms:</b></u>
+OpenGM comes with an uniform inference algorithm framework, which makes developing of new algorithms quite easy and allready provides several state of the art methods or wrappers to existing code:
+
+<ul>
+<li><b>Combinatorial/Gobal Optimal Methods</b></li> 
+  <ul>              
+  <li><b>Integer Linear Programming (ILP)***</b> [43]</li>             
+  <li><b>Multicut***</b> [45,40] </li>       
+  <li><b>Multiway Cut***</b> [45,40] </li>   
+  <li><b>Asymetric Multiway Cut***</b> [3] </li>       
+  <li><b>A-star branch-and-bound search (AStar)</b> [25]</li>
+  <li><b>Reduced Inference</b> [41]</li>
+  <li><b>BruteForce</b></li> 
+  <li><b>CombiLP</b> [17]</li> 
+  <li><b>DAOOPT</b> [15]</li>  
+  <li><b>AD3 with Branch and Bound</b> [16]</li>         
+  </ul>    
+<li><b>Linear Programming Relaxations</b></li> 
+  <ul>   
+  <li><b>Dual Decomposition with Bundle</b> [44]</li>
+  <li><b>Dual Decomposition with Subgradients</b> [44]</li>
+  <li><b>Sequntial Tree-reweighted Message Passing (TRWS)**</b> [51]</li>
+  <li><b>Adaptive Diminishing Smoothing ALgorithm (ADSAL)</b> [61]</li>
+  <li><b>Quadratic Pseudo Boolean Optimization (QPBO)*</b> [60]</li>
+  <li><b>Higher order QPBO</b> [34]</li>
+  <li><b>MQPBO**</b> [50,63]</li>
+  <li><b>Multiway Cut Relaxations***</b> [45,40]</li>
+  <li><b>Linear Programming Relaxations over the Local Polytope (LP)***</b> [43]</li> 
+  <li><b>AD3</b> [16]</li> 
+  <li><b>MPLP</b> [14,13,12]</li> 
+  <li><b>GraphCut</b>
+    <ul>
+    <li>Boost Max-Flow Methods (<a href="http://www.boost.org/doc/libs/1_53_0/libs/graph">link</a>) </li>
+    <li>IBFS (<a href="http://www.cs.tau.ac.il/~sagihed/ibfs/">link</a>)</li>
+    <li>Kolmogorovs algorithm (<a href="http://pub.ist.ac.at/~vnk/software.html">link</a>)</li>
+    </ul>
+  </ul>    
+<li><b>Message Passing Methods</b></li>
+  <ul>   
+  <li><b>Dynamic Programming on acyclic  graphs</b> (also for higher-order) [24]</li>
+  <li><b>Loopy Belief Propagation (LBP)**</b> (different variant, also for higher-order) [64,24]</li>
+  <li><b>Sequential Belief Propagation (BPS)**</b> (different variant, also for higher-order) [64,51,24]</li>
+  <li><b>Tree-reweighted Belief Propagation (TRBP)</b> (also for higher order) [66]</li>
+  </ul>
+<li><b>Move Making Methods</b></li>
+  <ul>
+  <li><b>Lazy Flipper</b> [22]</li>
+  <li><b>Inf and Flip</b> [22]</li>
+  <li><b>Iterated Conditional Modes (ICM)</b> [26]</li>
+  <li><b>FastPD*</b> [53]</li>
+  <li><b>Alpha-Expansion**</b> [30]</li>
+  <li><b>Alpha-Beta-Swap**</b> [30]</li>
+  <li><b>Alpha-Fusion</b> [4]</li>
+  <li><b>Kerninghan Lin Algorithm</b> [47]</li>
+  <li><b>LOC</b> [39]</li> 
+  <li><b>Self-Fusion</b> [4]</li>
+  <li><b>Proposal-Based-Fusion</b> [4]</li>
+  <li><b>Local Submodular Approximation with Trust Region</b> [6]</li>
+  </ul>
+<li><b>Sampling</b></li>
+  <ul>
+  <li><b>Gibbs Sampling (beta)</b> [36]</li>
+  <li><b>Swendsen-Wang (beta)</b> [62]</li>
+  </ul>
+<li><b>Wrapped External Code for Discrete Graphical Models</b></li>
+  <ul>
+  <li><b>TRWS**</b> (<a href="http://research.microsoft.com/en-us/downloads/dad6c31e-2c04-471f-b724-ded18bf70fe3/">link</a>) [51]</li>
+  <li><b>QPBO*</b> (<a href="http://pub.ist.ac.at/~vnk/software.html">link</a>)[60]</li> 
+  <li><b>FastPD*</b> (<a href="http://www.centrale-ponts.fr/personnel/komodakis/software.html">link</a>) [53]</li>
+  <li><b>GCO-LIB</b> (<a href="http://vision.csd.uwo.ca/code/">link</a>) [60]</li> 
+  <li><b>MRF-LIB</b> (<a href="http://vision.middlebury.edu/MRF/code/">link</a>) [64]</li>
+  <li><b>LibDAI</b> (<a href="http://cs.ru.nl/~jorism/libDAI/">link</a>) [57]</li> 
+  <li><b>DAOOPT</b> (<a href="https://github.com/lotten/daoopt">link</a>) [15]</li> 
+  <li><b>AD3</b> (<a href="http://www.ark.cs.cmu.edu/AD3/">link</a>) [16]</li> 
+  <li><b>MPLP</b> (<a href="http://cs.nyu.edu/~dsontag/">link</a>) [14,13,12]</li> 
+  </ul>
+</ul>
+<hr>
+<font size="1">
+* only available by wrapped external code<br>
+** available by native OpenGM-code and wrapped external code<br>
+*** requires CPLEX (free for academical use)
+</font>
+<!--
+<br>
+<b><i>Loopy Belief Propagation</i></b> (Pearl 1988, Yedidia et al. 2000) 
+parallel and sequential min-sum and max-product message passing (also for higher-order models) with optional message damping,
+<b><i>Tree-reweighted Belief Propagation (TRBP)</i></b> (Wainwright et al. 2005) parallel and sequential min-sum and max-product message passing
+(also for higher-order models) with optional message damping,
+<b><i>A-star branch-and-bound search</i></b> (Bergtholdt et al. 2009), 
+<b><i>Dual Decomposition</i></b> (Kappes et al. 2012) including sub-gradient and bundle methods, automated and manual decomposition of arbitrary factor graphs and arbitrary sub-solvers via templates, 
+<b><i>Graph Cut</i></b> (Boykov et al. 2001) supporting among others <i>Push-Relabel</i> (Goldberg and Tarjan 1986), <i>Edmonds-Karp</i> (Edmonds and Karp 1972), <i>Kolmogorov</i> (Boykov and Kolmogorov 2004), 
+<b><i>QPBO</i></b>,
+<b><i>Linear Programming Relaxations over the Local Polytope</i></b>, 
+<b><i>Integer Linear Programming</i></b>, 
+<b><i>Alpha-Expansion</i></b>, 
+<b><i>Alpha-Beta-Swap</i></b>, 
+<b><i>Iterated Conditional Modes (ICM)</i></b> (Besag 1986), 
+<b><i>Lazy Flipper</i></b> (Andres et al. 2010), 
+<b><i>MCMC</i></b> Metropolis-Hastings algorithms (Metropolis et al. 1953): <i>Gibbs sampling</i> (Geman and Geman 1984)</li> and <i>Swendsen-Wang sampling</i> (Swendsen and Wang 1987), and
+<b><i>Wrappers around external Code</i></b> Among others <i>MRF-LIB</i>, <i>LIB-DAI</i>, <i>TRW-S</i>, <i>QPBO</i>.
+-->
+
+<p>
+<u><b>Binary HDF5 File Format:</b></u> Support I/O for factor graph models into files. The I/O framework is such designed that it easily can be extended by new function types. 
+</p>
+<p>
+<u><b>Interfaces:</b></u> 
+<i>Command Line Optimizer</i> with built-in protocol mode for runtime and convergence analyses.
+<i>Matlab and Python interfaces</i> will be available with version 2.1 
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+</div>
+  <div class="lastmodified">
+    Last modified:
+     September 23 2015 10:21:23    (<a target="_blank" class="author" href="http://www.uni-heidelberg.de/contact.html">legal notice</a>)
+  </div>
+</body>
+
+<!-- Mirrored from 129.206.117.250/opengm/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Nov 2025 16:16:15 GMT -->
+</html>

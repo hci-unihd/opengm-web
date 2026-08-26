@@ -1,0 +1,307 @@
+
+body { 
+  font-family: sans-serif; 
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+a:link, a:visited {
+  xtext-decoration: none;
+  color: #900
+  xcolor: #09357a; 
+}
+
+a:hover {
+  xtext-decoration: underline;
+  background: #ccc;
+}
+
+div.top {
+  border-top: 1px solid #900;  /* needed by firefox... */
+  height: 35px;
+  margin: 0;
+  padding: 0;
+}
+div.right { 
+  float:right;
+}
+div.menu { 
+  font-size: 60%;
+  width: 150px;
+  font-weight: bold;
+  text-align: left;
+  float:left;
+  background: #EEEEEE;
+  min-height: 470px;
+  border-width: 1px 2px;
+  border-color: #777777;
+  border-style: solid ;
+  margin:  0px 0px 0px 3px;
+  padding: 3px 3px 3px 3px;
+}
+div.menu2 {
+    text-align: right;
+    float:right;
+    font-weight: bold;
+}
+
+div.clear {
+clear:left;
+}
+
+div.header {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: left;
+  border-width: 1px 2px;
+  border-color: #777;
+  border-style: solid dotted;
+  margin: 8px 5px 1px 25px;
+  padding: 1px 8px 2px 8px;
+}
+
+a.header:link, a.header:visited {
+  color: #900;
+  text-decoration: none;
+  margin: 0;
+  padding: 1px 5px 2px 5px;
+}
+
+div.header>a.header:link, div.header>a.header:visited, div.header>a.header:hover {
+  padding-bottom: 3px;
+}
+
+a.header:hover {
+  background: #ccc;
+  color: black;
+  text-decoration: none;
+}
+
+a.header.activeHeader:hover {
+  background: white;
+  color: #900;
+}
+
+a.menu:link, a.menu:visited, a.menu:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+
+div.tabs {
+  font-weight: bold;
+  text-align: right;
+  color: #777;
+  margin: 0 5px 0 0;
+  padding-right: 10px;  
+}
+
+a.tab {
+  padding: 1px 5px 2px 5px;
+  text-decoration: none;
+}
+
+a.tab:link, a.tab:visited {
+  color: #777;
+}
+
+a.tab:hover {
+  background: #ccc;
+  color: black;
+  text-decoration: none;
+}
+
+a.tab.activeTab, a.tab.activeTab:hover, a.tab.activeTab:visited {
+  background: white;
+  border: solid #777;
+  border-width: 0px 1px 1px 1px;
+  padding: 2px 4px 2px 4px;
+  color: #F66;
+}
+
+div.main {
+  border-left: 1px solid #900;
+  border-bottom: 1px solid #900;
+  margin: 0 7px 0 0;
+  padding: 0;
+  min-height: 500px;
+}
+
+div.titlebar { 
+  font-weight: bold;
+  padding: 4px 0;
+  xbackground: pink;
+}
+
+a.title, a.title:visited {
+  font-size: 125%;
+  background: #900;
+  xbackground: #900; /* new MIDD color?? */
+  color: white;
+  text-decoration: none;
+  padding: 4px 25px;
+  xborder: 1px solid #900;
+  xborder-bottom: 1px solid red;
+}
+
+a.title:hover {
+  background: #900;
+  color: #ccc;
+}
+
+a.title.activeTitle:hover {
+  background: #900;
+  color: white;
+}
+
+span.subtab {
+  background: url(imgs/shadow16-t2.png) repeat-x bottom;
+  color: #777;
+  padding: 4px 5px 4px 5px;
+  border: #900 solid;
+  border-width: 0 0 1px 0;
+  xbackground: green;
+}
+
+span.lastsubtab {
+  background: url(imgs/shadow16-t2.png) repeat-x bottom;
+}
+div.titlebar>span.lastsubtab {
+  padding: 4px 0;
+}
+
+span.lastsubtab2 {
+  background: url(imgs/rightfade.png) no-repeat bottom right;
+  padding: 4px 5px 4px 5px;
+  border: #900 solid;
+  border-width: 0 0 1px 0;
+}
+
+a.author {
+  background: white;
+  color: #000;
+  text-decoration: none;
+}
+a.author:hover {
+  background: #EEE;
+  color: #000;
+  text-decoration: none;
+}
+
+a.subtab {
+  background: white url(imgs/shadow16-t2.png) repeat-x bottom;
+  padding: 4px 5px 4px 5px;
+  text-decoration: none;
+  border: #900 solid;
+  border-width: 0 0 1px 0;
+  xbackground: yellow;
+  xborder: 1px solid red;
+}
+
+a.subtab:link, a.subtab:visited {
+  color: #777;
+}
+
+a.subtab:hover {
+  background: #ccc;
+  color: black;
+  text-decoration: none;
+}
+
+a.subtab.activeSub:link, a.subtab.activeSub:hover, a.subtab.activeSub:visited {
+  background: white;
+  color: #300;
+  border-width: 1px 1px 0 1px;
+  padding: 4px 4px 5px 4px;
+}
+
+a.subtab.activeSubM:link, a.subtab.activeSubM:visited {
+  background: white;
+  color: #300;
+  border-width: 1px 0px 0 0px;
+  padding: 4px 4px 5px 4px;
+}
+a.subtab.activeSubL:link, a.subtab.activeSubL:hover, a.subtab.activeSubL:visited {
+  background: white;
+  color: #300;
+  border-width: 1px 0px 0 1px;
+  padding: 4px 4px 5px 4px;
+}
+a.subtab.activeSubR:link, a.subtab.activeSubR:visited {
+  background: white;
+  color: #300;
+  border-width: 1px 1px 0 0px;
+  padding: 4px 4px 5px 4px;
+}
+a.subtab.activeSubM:hover {
+  background: #ccc;
+  color: #300;
+  border-width: 1px 0px 0 0px;
+  padding: 4px 4px 5px 4px;
+}
+a.subtab.activeSubR:hover {
+  background: #ccc;
+  color: #300;
+  border-width: 1px 1px 0 0px;
+  padding: 4px 4px 5px 4px;
+}
+
+
+
+div.content {
+  font-size: 80%;
+  xbackground-color: white;
+  color: black;
+  text-align: left;
+
+  background: #EEEEEE;
+  border-width: 1px 2px;
+  border-color: #777777;
+  border-style: solid ;
+  margin:  3px 3px 3px 173px;
+  padding: 3px 3px 3px 3px;
+  min-height: 470px;
+}
+
+
+p.authors {
+  margin: 0;
+  padding: 5px 2em 25px 2em;
+  xbackground: yellow;
+}
+
+p.cite {
+  margin: 0;
+  padding: 20px 2em 20px 2em;
+}
+
+table {
+  font-size: 100%;
+}
+
+div.lastmodified {
+  xborder-top: 1px solid #900;
+  xborder-left: 1px solid #900;
+  xheight: 16px;
+  font-size: 70%;
+  text-align: right;
+  padding: 3px 1em;
+  margin: 0;
+}
+
+div.floatright {
+  float: right;
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+img.flush {
+  margin: 0;
+  padding: 0;
+}
+
+div.announce {
+  padding: 8px;
+  margin: 0 100pix 0 0;
+  background: yellow;
+  font-weight: bold;
+}
