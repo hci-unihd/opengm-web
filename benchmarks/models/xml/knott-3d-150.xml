@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>knott-3d-150</tag>
+  <thumb>3d-neuron-seg.png</thumb>
+  <modelname>Knott 3D Segmentation 150</modelname>
+  <author>Bjoern Andres et.al. </author>
+  <converter>Thorben Kroeger</converter>
+  <minvariables>572</minvariables> 
+  <maxvariables>972</maxvariables> 
+  <minlabels>572</minlabels>
+  <maxlabels>972</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>sparse</structure>
+  <functions>potts</functions>
+  <instances>2</instances>
+  <reference>Andres-2012b,Andres-2012</reference>
+  <zip>knott-3d-150.zip</zip>
+  <comment>Invariant to label permutation. Use supervoxels.</comment>
+</model>

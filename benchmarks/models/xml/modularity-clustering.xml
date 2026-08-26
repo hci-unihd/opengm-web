@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>modularity-clustering</tag>
+  <thumb>modularity-clustering.png</thumb>
+  <modelname>Modularity Clustering</modelname>
+  <author>U. Brandes et.al. </author>
+  <converter>Joerg Kappes</converter>
+  <minvariables>34</minvariables> 
+  <maxvariables>115</maxvariables> 
+  <minlabels>34</minlabels>
+  <maxlabels>115</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>sparse</structure>
+  <functions>potts</functions>
+  <instances>2</instances>
+  <reference>Brandes-2008</reference>
+  <zip>modularity-clustering.zip</zip>
+  <comment>Invariant to label permutation.</comment>
+</model>

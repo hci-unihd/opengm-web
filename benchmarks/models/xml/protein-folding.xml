@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>protein-folding</tag>
+  <thumb>protein-folding.png</thumb>
+  <modelname>Protein Folding</modelname>
+  <author>Yanover et. al.</author>
+  <converter>Joerg Kappes</converter>
+  <minvariables>33</minvariables> 
+  <maxvariables>1972</maxvariables> 
+  <minlabels>81</minlabels>
+  <maxlabels>503</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>sparse</structure>
+  <functions>explicit</functions>
+  <instances>21</instances>
+  <reference>PIC-2011,Yanover-2008</reference>
+  <zip>protein-folding.zip</zip>
+  <comment>Large models, arbitrary pairwise terms, selected hard models</comment>
+</model>

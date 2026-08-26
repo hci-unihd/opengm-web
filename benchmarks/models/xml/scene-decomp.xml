@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>scene-decomposition</tag>
+  <thumb>scene-decomp.jpg</thumb>
+  <modelname>Scene Decomposition</modelname>
+  <author>Gould et.al. </author>
+  <converter>S. Nowozin and J. H. Kappes</converter>
+  <minvariables>150</minvariables> 
+  <maxvariables>208</maxvariables> 
+  <minlabels>8</minlabels>
+  <maxlabels>8</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>sparse</structure>
+  <functions>explicit</functions>
+  <instances>751</instances>
+  <reference>Gould-2009</reference>
+  <zip>scene-decomp.zip</zip>
+  <comment>Use superpixels.</comment>
+</model>

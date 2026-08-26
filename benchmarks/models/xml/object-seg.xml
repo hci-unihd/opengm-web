@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xml>
+  <tag>object-seg</tag>
+  <thumb>object-seg.jpg</thumb>
+  <modelname>Object Segmentation</modelname>
+  <author>K. Alahari et.al.  </author>
+  <converter>J.H. Kappes </converter>
+  <minvariables>68160</minvariables> 
+  <maxvariables>68160</maxvariables> 
+  <minlabels>4</minlabels>
+  <maxlabels>8</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>grid4</structure>
+  <functions>potts</functions>
+  <instances>2</instances>
+  <reference>Alahari-2010</reference>
+  <zip>object-seg.zip</zip>
+</xml>

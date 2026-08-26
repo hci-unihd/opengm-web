@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>FoE</tag>
+  <thumb>FoE.jpg</thumb>
+  <modelname>Field of Experts</modelname>
+  <author>S. Roth and M. J. Black</author>
+  <converter>J. H. Kappes</converter>
+  <minvariables>38801</minvariables> 
+  <maxvariables>38801</maxvariables> 
+  <minlabels>256</minlabels>
+  <maxlabels>256</maxlabels>
+  <minorder>4</minorder>
+  <maxorder>4</maxorder>
+  <structure>sparse</structure>
+  <functions>FoE</functions>
+  <instances>100</instances>
+  <reference>Roth-2009</reference>
+  <zip>FoE.zip</zip>
+  <comment></comment>
+</model>

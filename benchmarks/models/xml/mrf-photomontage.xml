@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>mrf-photomontage</tag>
+  <thumb>mrf-photomontage.jpg</thumb>
+  <modelname>MRF Photomontage</modelname>
+  <author>R. Szeliski et.al. </author>
+  <converter>J.H. Kappes </converter>
+  <minvariables>425632</minvariables> 
+  <maxvariables>514080</maxvariables> 
+  <minlabels>5</minlabels>
+  <maxlabels>7</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>grid4</structure>
+  <functions>explicite</functions>
+  <instances>2</instances>
+  <reference>Szeliski-2008</reference>
+  <zip>mrf-stereo.zip</zip>
+  <comment>Models include soft-constraints.</comment>
+</model>

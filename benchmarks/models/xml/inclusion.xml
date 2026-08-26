@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>inclusion</tag>
+  <thumb>inclusion.png</thumb>
+  <modelname>Image Segmentation with Inclusion Prior</modelname>
+  <author>J. Kappes et.al. </author>
+  <converter>J. Kappes</converter>
+  <minvariables>1024</minvariables> 
+  <maxvariables>1024</maxvariables> 
+  <minlabels>4</minlabels>
+  <maxlabels>4</maxlabels>
+  <minorder>4</minorder>
+  <maxorder>4</maxorder>
+  <structure>sparse</structure>
+  <functions>gpotts</functions>
+  <instances>100</instances>
+  <reference>Kappes-2013-hom</reference>
+  <zip>inclusion.zip</zip>
+  <comment>higher order</comment>
+</model>

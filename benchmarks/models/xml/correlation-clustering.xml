@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>correlation-clustering</tag>
+  <thumb>correlation-clustering.png</thumb>
+  <modelname>Hirachical Image Segmentation</modelname>
+  <author>K. Sungwoong et.al. </author>
+  <converter>K. Sungwoong and J. H. Kappes</converter>
+  <minvariables>122</minvariables> 
+  <maxvariables>651</maxvariables> 
+  <minlabels>122</minlabels>
+  <maxlabels>651</maxlabels>
+  <minorder>34</minorder>
+  <maxorder>651</maxorder>
+  <structure>sparse</structure>
+  <functions>potts</functions>
+  <instances>715</instances>
+  <reference>Kim-2011</reference>
+  <zip>correlation-clustering.zip</zip>
+  <comment>Invariant to label permutation. Use superpixels.</comment>
+</model>

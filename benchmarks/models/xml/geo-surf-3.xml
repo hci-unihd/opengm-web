@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>geo-surf-3</tag>
+  <thumb>geo-surf.jpg</thumb>
+  <modelname>Geometric Surface Labeling (3)</modelname>
+  <author>Gallagher et.al. </author>
+  <converter>D. Batra and J. H. Kappes</converter>
+  <minvariables>29</minvariables> 
+  <maxvariables>1133</maxvariables> 
+  <minlabels>3</minlabels>
+  <maxlabels>3</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>sparse</structure>
+  <functions>explicit</functions>
+  <instances>300</instances>
+  <reference>Gallagher-2011,Hoiem-2007</reference>
+  <zip>geo-surf-3.zip</zip>
+  <comment>Use superpixels.</comment>
+</model>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>protein-prediction</tag>
+  <thumb>protein-prediction.png</thumb>
+  <modelname>Protein Prediction</modelname>
+  <author>Jaimovich et. al.</author>
+  <converter>Joerg Kappes</converter>
+  <minvariables>14258</minvariables> 
+  <maxvariables>14441</maxvariables> 
+  <minlabels>2</minlabels>
+  <maxlabels>2</maxlabels>
+  <minorder>3</minorder>
+  <maxorder>3</maxorder>
+  <structure>spase</structure>
+  <functions>explicit</functions>
+  <instances>8</instances>
+  <reference>PIC-2011,Jaimovich-2006</reference>
+  <zip>protein-prediction.zip</zip>
+  <comment>binary 3rd order models</comment>
+</model>

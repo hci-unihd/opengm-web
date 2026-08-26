@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>cell-tracking</tag>
+  <thumb>cell-tracking.png</thumb>
+  <modelname>Cell Tracking</modelname>
+  <author>B. X. Kausler et.al. </author>
+  <converter>B. X.Kausler</converter>
+  <minvariables>41134</minvariables> 
+  <maxvariables>41134</maxvariables> 
+  <minlabels>2</minlabels>
+  <maxlabels>2</maxlabels>
+  <minorder>9</minorder>
+  <maxorder>9</maxorder>
+  <structure>sparse</structure>
+  <functions>explicit</functions>
+  <instances>1</instances>
+  <reference>Kausler-2012</reference>
+  <zip>matching.zip</zip>
+  <comment>Model includes soft-constraints.</comment>
+</model>

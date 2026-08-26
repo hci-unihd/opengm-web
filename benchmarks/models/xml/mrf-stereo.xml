@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<model>
+  <tag>mrf-stereo</tag>
+  <thumb>mrf-stereo.jpg</thumb>
+  <modelname>MRF Stereo</modelname>
+  <author>R. Szeliski et.al. </author>
+  <converter>J.H. Kappes </converter>
+  <minvariables>~100000</minvariables> 
+  <maxvariables>~100000</maxvariables> 
+  <minlabels>16</minlabels>
+  <maxlabels>60</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>grid4</structure>
+  <functions>trunc. conv.</functions>
+  <instances>3</instances>
+  <reference>Szeliski-2008</reference>
+  <zip>mrf-stereo.zip</zip>
+</model>

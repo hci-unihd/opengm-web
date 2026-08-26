@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>seg-3d</tag>
+  <thumb>3d-neuron-seg.png</thumb>
+  <modelname>3D Neuron Segmentation</modelname>
+  <author>B. Andres et.al. </author>
+  <converter>B. Andres</converter>
+  <minvariables>7958</minvariables> 
+  <maxvariables>101220</maxvariables> 
+  <minlabels>7958</minlabels>
+  <maxlabels>101220</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>sparse</structure>
+  <functions>potts</functions>
+  <instances>2</instances>
+  <reference>Andres-2012b,Andres-2012</reference>
+  <zip>3d-neuron-seg.zip</zip>
+  <comment>Invariant to label permutation. Use supervoxels.</comment>
+</model>

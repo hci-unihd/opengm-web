@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<model>
+  <tag>color-seg-n4</tag>
+  <thumb>color-seg-n.gif</thumb>
+  <modelname>ColorSegmentation (N4)</modelname>
+  <author>J. Lellmann et.al.  </author>
+  <converter> J. Lellmann and J.H. Kappes </converter>
+  <minvariables>76800</minvariables> 
+  <maxvariables>76800</maxvariables> 
+  <minlabels>3</minlabels>
+  <maxlabels>12</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>grid4</structure>
+  <functions>potts</functions>
+  <instances>2</instances>
+  <reference>Lellmann-2011</reference>
+  <zip>color-seg-n.zip</zip>
+</model>

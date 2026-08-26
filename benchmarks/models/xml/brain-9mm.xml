@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>brain-9mm</tag>
+  <thumb>brain.png</thumb>
+  <modelname>Brain 9mm</modelname>
+  <author>J. H. Kappes et.al.  </author>
+  <converter>J. H. Kappes </converter>
+  <minvariables>785540</minvariables> 
+  <maxvariables>785540</maxvariables> 
+  <minlabels>5</minlabels>
+  <maxlabels>5</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>3d-grid6</structure>
+  <functions>potts</functions>
+  <instances>4</instances>
+  <reference>Brainweb</reference>
+  <zip>brain-9mm.zip</zip>
+  <comment>Good example for large scale</comment>
+</model>

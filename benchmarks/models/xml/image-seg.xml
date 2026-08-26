@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>image-seg</tag>
+  <thumb>image-seg.png</thumb>
+  <modelname>Image Segmentation</modelname>
+  <author>B. Andres et.al. </author>
+  <converter>B. Andres</converter>
+  <minvariables>156</minvariables> 
+  <maxvariables>3764</maxvariables> 
+  <minlabels>156</minlabels>
+  <maxlabels>3764</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>sparse</structure>
+  <functions>potts</functions>
+  <instances>100</instances>
+  <reference>Andres-2011</reference>
+  <zip>image-seg.zip</zip>
+  <comment>Invariant to label permutation. Use superpixels.</comment>
+</model>

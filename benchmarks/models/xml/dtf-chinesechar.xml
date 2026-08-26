@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<model>
+  <tag>dtf-chinesechar</tag>
+  <thumb>dtf-chinesechar.png</thumb>
+  <modelname>Chinese Characters</modelname>
+  <author>S. Nowozin et.al.  </author>
+  <converter>S. Nowozin and J. H. Kappes </converter>
+  <minvariables>4992</minvariables> 
+  <maxvariables>17856</maxvariables> 
+  <minlabels>2</minlabels>
+  <maxlabels>2</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>sparse</structure>
+  <functions>explicit</functions>
+  <instances>100</instances>
+  <reference>Nowozin-2011</reference>
+  <zip>dtf-chinesechar.zip</zip>
+</model>

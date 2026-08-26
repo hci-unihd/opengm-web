@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<model>
+  <tag>matching</tag>
+  <thumb>matching.jpg</thumb>
+  <modelname>Matching</modelname>
+  <author>N. Komodakis et.al. </author>
+  <converter>N. Komodakis and J.H. Kappes </converter>
+  <minvariables>19</minvariables> 
+  <maxvariables>21</maxvariables> 
+  <minlabels>19</minlabels>
+  <maxlabels>21</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>full / sparse</structure>
+  <functions>explicit</functions>
+  <instances>4</instances>
+  <reference>Komodakis-2008</reference>
+  <zip>matching.zip</zip>
+  <comment>Local polytope relaxation is not tight.</comment>
+</model>

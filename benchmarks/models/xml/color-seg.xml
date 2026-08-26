@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xml>
+  <tag>color-seg</tag>
+  <thumb>color-seg.png</thumb>
+  <modelname>ColorSegmentation</modelname>
+  <author>K. Alahari et.al.  </author>
+  <converter>J.H. Kappes </converter>
+  <minvariables>21000</minvariables> 
+  <maxvariables>424720</maxvariables> 
+  <minlabels>3</minlabels>
+  <maxlabels>4</maxlabels>
+  <minorder>2</minorder>
+  <maxorder>2</maxorder>
+  <structure>grid8</structure>
+  <functions>potts</functions>
+  <instances>2</instances>
+  <reference>Alahari-2010</reference>
+  <zip>color-seg.zip</zip>
+</xml>
